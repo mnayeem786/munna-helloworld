@@ -21,7 +21,8 @@ public class UserBean{
 		int k=80;
 
 		int j=0;
-
+		
+		int z=0;
 	}
 	public save(){
 		
