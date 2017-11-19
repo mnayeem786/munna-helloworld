@@ -15,6 +15,7 @@ public class UserBean{
 	public String favColor3;
 	private String firstname="Nayeems";
 	private String lastName="mohammed";
+	private String adresss="Mumbai";
 	
 	
 	public void delete(){
