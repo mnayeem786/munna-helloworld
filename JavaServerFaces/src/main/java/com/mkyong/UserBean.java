@@ -15,7 +15,9 @@ public class UserBean{
 	public String favColor3;
 	
 	
-	
+	public void delete(){
+		
+	}
 	public initilize(){
 	}
 	public String getFavColor1() {
