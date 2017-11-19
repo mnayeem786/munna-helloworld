@@ -16,7 +16,7 @@ public class UserBean{
 	
 	
 	public void delete(){
-		
+		int i=0;
 	}
 	public save(){
 		
