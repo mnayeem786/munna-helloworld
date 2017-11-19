@@ -15,10 +15,6 @@ public class UserBean{
 	public String favColor3;
 	
 	
-	public saveData(){
-		
-	}
-	
 	
 	public initilize(){
 	}
