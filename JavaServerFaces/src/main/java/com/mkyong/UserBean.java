@@ -18,6 +18,9 @@ public class UserBean{
 	public void delete(){
 		
 	}
+	public save(){
+		
+	}
 	public initilize(){
 	}
 	public String getFavColor1() {
