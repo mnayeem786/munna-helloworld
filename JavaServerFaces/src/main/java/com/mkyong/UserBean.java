@@ -14,6 +14,14 @@ public class UserBean{
 	public String favColor2;
 	public String favColor3;
 	
+	
+	public saveData(){
+		
+	}
+	
+	
+	public initilize(){
+	}
 	public String getFavColor1() {
 		return favColor1;
 	}
