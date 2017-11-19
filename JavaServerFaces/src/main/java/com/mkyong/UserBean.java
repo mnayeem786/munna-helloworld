@@ -13,6 +13,7 @@ public class UserBean{
 	public String favColor1;
 	public String favColor2;
 	public String favColor3;
+	private String ="Nayeems";
 	
 	
 	public void delete(){
