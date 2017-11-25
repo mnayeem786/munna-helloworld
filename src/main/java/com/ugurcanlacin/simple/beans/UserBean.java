@@ -23,6 +23,7 @@ public class UserBean implements Serializable {
 	
 	private String name;
 	private String surname;
+	private String postalAddress;
 	
 	public void setUserService(UserService userService) {
 		this.userService = userService;
@@ -46,6 +47,14 @@ public class UserBean implements Serializable {
 		user.setName(getName());
 		user.setSurname(getSurname());
 		userService.persistUser(user);
+	}
+
+	public String getPostalAddress() {
+		return postalAddress;
+	}
+
+	public void setPostalAddress(String postalAddress) {
+		this.postalAddress = postalAddress;
 	}
 	
 	
