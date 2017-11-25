@@ -23,8 +23,12 @@ public class UserBean implements Serializable {
 	
 	private String name;
 	private String surname;
+
 	private String lasname;
 	private String postalAddress;
+
+	private String houseNo;
+
 	
 	public void setUserService(UserService userService) {
 		this.userService = userService;
@@ -50,6 +54,7 @@ public class UserBean implements Serializable {
 		userService.persistUser(user);
 	}
 
+
 	public String getLasname() {
 		return lasname;
 	}
@@ -64,6 +69,13 @@ public class UserBean implements Serializable {
 
 	public void setPostalAddress(String postalAddress) {
 		this.postalAddress = postalAddress;
+	}
+	public String getHouseNo() {
+		return houseNo;
+	}
+
+	public void setHouseNo(String houseNo) {
+		this.houseNo = houseNo;
 	}
 	
 	
