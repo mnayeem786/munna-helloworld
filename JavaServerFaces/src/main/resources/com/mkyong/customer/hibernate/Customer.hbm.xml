@@ -19,5 +19,13 @@
         <property name="createdDate" type="timestamp">
             <column name="CREATED_DATE" length="19" not-null="true" />
         </property>
+        
+         <property name="radio1" type="boolean">
+            <column name="GENDER" length="45" not-null="true" />
+        </property>
+        
+          <property name="user_color" type="string">
+            <column name="FACTS" length="45" not-null="true" />
+        </property>
     </class>
 </hibernate-mapping>

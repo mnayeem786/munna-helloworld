@@ -9,5 +9,6 @@ public interface CustomerDao{
 	void addCustomer(Customer customer);
  
 	List<Customer> findAllCustomer();
+	void deleteByIdCustomer(Customer c);
  
 }

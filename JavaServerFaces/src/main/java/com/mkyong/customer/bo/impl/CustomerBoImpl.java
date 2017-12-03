@@ -24,4 +24,10 @@ public class CustomerBoImpl implements CustomerBo{
  
 		return customerDao.findAllCustomer();
 	}
+
+	@Override
+	public void deleteCustomer(Customer c) {
+		 customerDao.deleteByIdCustomer(c);
+		
+	}
 }

@@ -9,5 +9,6 @@ public interface CustomerBo{
 	void addCustomer(Customer customer);
  
 	List<Customer> findAllCustomer();
+	void deleteCustomer(Customer c);
  
 }

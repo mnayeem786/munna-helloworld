@@ -2,7 +2,9 @@ package com.mkyong.customer.dao.impl;
  
 import java.util.Date;
 import java.util.List;
- 
+
+import javax.naming.spi.DirStateFactory.Result;
+
 import com.mkyong.customer.dao.CustomerDao;
 import com.mkyong.customer.model.Customer;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
@@ -20,7 +22,12 @@ public class CustomerDaoImpl extends
 	@SuppressWarnings("unchecked")
 	public List<Customer> findAllCustomer(){
  
-		return getHibernateTemplate().find("from Customer");
+		List<Customer> customerList=getHibernateTemplate().find("from Customer");
+			
+		 return customerList;
  
+	}
+	public void deleteByIdCustomer(Customer c){
+		getHibernateTemplate().delete(c);
 	}
 }
