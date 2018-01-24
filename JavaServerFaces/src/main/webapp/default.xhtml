@@ -14,61 +14,65 @@
 <h:body>
 
 	<h1>Login Page</h1>
-<h:form>
-	<h:dataTable value="#{customer.getCustomerList()}" var="c"
-		styleClass="order-table" headerClass="order-table-header"
-		rowClasses="order-table-odd-row,order-table-even-row">
+	<h:form>
 
-		<h:column>
-			<f:facet name="header">
+
+
+		<h:dataTable value="#{customer.getCustomerList()}" var="c"
+			styleClass="order-table" headerClass="order-table-header"
+			rowClasses="order-table-odd-row,order-table-even-row">
+
+			<h:column>
+				<f:facet name="header">
     				Customer ID
     			</f:facet>
     				#{c.customerId}
     		</h:column>
 
-		<h:column>
-			<f:facet name="header">
+			<h:column>
+				<f:facet name="header">
     				Name
 				</f:facet>
     				#{c.name}
     		</h:column>
 
-		<h:column>
-			<f:facet name="header">
+			<h:column>
+				<f:facet name="header">
     				Address
 				</f:facet>
     				#{c.address}
     		</h:column>
 
-		<h:column>
-			<f:facet name="header">
+			<h:column>
+				<f:facet name="header">
     				Created Date
 				</f:facet>
     				#{c.createdDate}
     		</h:column>
 
-		<h:column>
-			<f:facet name="header">
+			<h:column>
+				<f:facet name="header">
     				Tax Declarations
 				</f:facet>
     				#{c.user_color}
     		</h:column>
 
 			<h:column>
-			<f:facet name="header">
+				<f:facet name="header">
     				Delete
 				</f:facet>
-    			<h:commandButton action="#{customer.deleteCustomer(c)}" value="Delete"></h:commandButton>
-    		</h:column>
-
-	</h:dataTable>
-</h:form>
+				<h:commandButton action="#{customer.deleteCustomer(c)}"
+					value="Delete"></h:commandButton>
+					</h:column>
+		</h:dataTable>
+		
+	</h:form>
 	<h2>Add New Customer</h2>
 	<h:form id="formid">
 		<h:outputLabel value="Gender"></h:outputLabel>
 		<h:selectOneRadio value="#{customer.radio1}">
-			<f:selectItem itemValue="#{true}" itemLabel="Yes" />
-			<f:selectItem itemValue="#{false}" itemLabel="No" />
+			<f:selectItem itemValue="#{customer.radio1}" itemLabel="Yes" />
+			<f:selectItem itemValue="#{customer.radio1}" itemLabel="No" />
 
 		</h:selectOneRadio>
 
