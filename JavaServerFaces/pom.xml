@@ -12,6 +12,7 @@
   <url>http://maven.apache.org</url>
   
   <dependencies>
+  
   	
   	<!-- For Java EE Application Server, uncomment this library 
   	and comment the rest of the libraries
@@ -30,12 +31,26 @@
 	  <artifactId>jsf-api</artifactId>
 	  <version>2.1.0-b03</version>
 	</dependency>
+	
 	<dependency>
 	  <groupId>com.sun.faces</groupId>
 	  <artifactId>jsf-impl</artifactId>
 	  <version>2.1.0-b03</version>
 	</dependency>
-    
+	
+	<!-- EL 2.2 to support method parameter in EL -->
+    <dependency>
+	  <groupId>org.glassfish.web</groupId>
+	  <artifactId>el-impl</artifactId>
+	  <version>2.2</version>
+	</dependency>
+	<!-- PrimeFaces -->
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>6.1</version>
+		</dependency>
+	
     <!-- http://repo1.maven.org/maven -->
     <dependency>
 	  <groupId>javax.servlet</groupId>
@@ -54,13 +69,16 @@
 	  <artifactId>jsp-api</artifactId>
 	  <version>2.1</version>
 	</dependency>
-	
+
+	<!-- too old
 	<dependency>
 	  <groupId>com.sun.el</groupId>
 	  <artifactId>el-ri</artifactId>
 	  <version>1.0</version>
 	</dependency>
- 
+   -->
+   
+  
   </dependencies>
   
   <repositories>
